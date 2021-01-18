@@ -1,4 +1,4 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <!--
 	Twenty by HTML5 UP
 	html5up.net | @ajlkn
@@ -13,11 +13,6 @@
     <link rel="stylesheet" href="assets/css/main.css" />
     <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 
-    <script>
-        function alertMessageSent() {
-            return alert("Thank you! Your message has been sent");
-        }
-    </script>
 </head>
 
 <body class="contact is-preload">
@@ -38,7 +33,7 @@
                             <li><a href="project4.html">Zews</a></li>
                         </ul>
                     </li>
-                    <li><a href="contact.html" class="button primary">Contact</a></li>
+                    <li><a href="contact.php" class="button primary">Contact</a></li>
                 </ul>
             </nav>
         </header>
@@ -57,7 +52,7 @@
 
                 <!-- Content -->
                 <div class="content">
-                    <form action="mailto:kaelin@kingadventure.com" method="post" enctype="text/plain">
+                    <form action="mail.php" method="post" enctype="text/plain">
                         <div class="row gtr-50">
                             <div class="col-6 col-12-mobile">
                                 <input type="text" name="name" placeholder="Name" />
@@ -73,7 +68,7 @@
                             </div>
                             <div class="col-12">
                                 <ul class="buttons">
-                                    <li><input type="submit" class="special" value="Send Message" onclick="alertMessageSent()" /></li>
+                                    <li><button type="submit" name="submit" class="special">SUBMIT</button></li>
                                 </ul>
 
                             </div>
