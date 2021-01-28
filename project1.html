@@ -28,7 +28,7 @@
                         <ul>
                             <li><a href="project1.html">Ravenous</a></li>
                             <li><a href="project2.html">Jamming</a></li>
-                            <li><a href="project3.html">Contact Form</a></li>
+                            <li><a href="project3.html">Fake Contact Form</a></li>
                             <li><a href="project4.html">Zews</a></li>
                         </ul>
                     </li>
@@ -79,7 +79,7 @@
                                         <li>Web Responsive CSS</li>
                                         <li>Javascript</li>
                                         <li>React</li>
-                                        <li>Connect APIS(fix)</li>
+                                        <li>RESTful API</li>
                                     </ul>
                                 </p>
                                 <footer>
@@ -99,11 +99,12 @@
                                 <a href="https://kingadventure.github.io/ravenous2/" class="image featured"><img src="images/ravenoussearchpic.jpg" alt="ravenoushomescreen" /></a>
                                 <p>Ravenous is a React App utilizing Yelp's API that allows users to search restaurants by location and genre ranking results by best match, highest rated, and most reviewed. I ultimately broke the project down into four parts
                                     of production, first, creating the static components, second, passing information to those components, third, setting the state of the Ravenous components and lastly, interacting with the Yelp API.</p>
-                                <p>I broke the components down into App, SearchBar, SearchResults, PlayList, TrackList and Track, building out the CSS files for each, writing the HTML inside the render methods, importing and exporting the necessary components,
-                                    and adding the methods for Track Search, renaming a PlayList, saving a PlayList to Spotify, removing a Track and adding a Track to a PlayList. After this, I passed the state of a search results parameter through a series
-                                    of components to render an array of tracks. Next I passed the state of a user’s custom playlist title and tracks from the App component down to components that render them.</p>
-                                <p>In vestibulum massa quis arcu lobortis tempus. Nam pretium arcu in odio vulputate luctus. Suspendisse euismod lorem eget lacinia fringilla. Sed sed felis justo. Nunc sodales elit in laoreet aliquam. Nam gravida, nisl sit
-                                    amet iaculis porttitor, risus nisi rutrum metus, non hendrerit ipsum arcu tristique est.</p>
+                                <p>I broke the components down into App, Business, and BusinessList, built out the CSS files for each, wrote the HTML inside the render methods. After this I set up the import and export functions to pass information from
+                                    the parent component (App) to the child components (BusinessList and Business). Once this was done, I started work on how the app would interact with the Yelp API. First I set the state of the search bar elements, then
+                                    simulated a search query. At this time I added the Yelp component that would be able to complete the functionality of the query. The Yelp.js component contained the API key I registered to the app, the function for
+                                    administering a search, and the links from my variable names to Yelps uris. This query would take the filters at the top of the page into account.
+                                </p>
+                                <p>This was one of my first React apps and the one that generated the most excitement for me in my early days of learning to code. I hope you get the chance to check it out!</p>
                             </section>
                         </div>
 
@@ -120,9 +121,7 @@
                             <header>
                                 <h3>Jamming</h3>
                             </header>
-                            <p>React App that allows users to search the Spotify library, create a custom playlist, then save it to their Spotify account.
-                                <br />
-                                <br />
+                            <p>Playlist Creator React.js App using Spotify's API.
                             </p>
                             <footer>
                                 <ul class="buttons">
@@ -136,9 +135,9 @@
 
                         <section>
                             <header>
-                                <h3>Contact Form</h3>
+                                <h3>Fake Contact Form</h3>
                             </header>
-                            <p>Sed tristique purus vitae volutpat ultrices. Aliquam eu elit eget arcu commodo suscipit dolor nec nibh. Proin a ullamcorper elit, et sagittis turpis. Integer ut fermentum.</p>
+                            <p>A PHP/MySQL App for submitting and retrieving contacts</p>
                             <footer>
                                 <ul class="buttons">
                                     <li><a href="project3.html" class="button small">Learn More</a></li>

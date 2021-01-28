@@ -28,7 +28,7 @@
                         <ul>
                             <li><a href="project1.html">Ravenous</a></li>
                             <li><a href="project2.html">Jamming</a></li>
-                            <li><a href="project3.html">Contact Form</a></li>
+                            <li><a href="project3.html">Fake Contact Form</a></li>
                             <li><a href="project4.html">Zews</a></li>
                         </ul>
                     </li>
@@ -61,9 +61,12 @@
                                     first, creating the static components, second, passing information to those components, third, setting the state of the components and lastly, interacting with the Spotify API.</p>
                                 <p>I broke the components down into App, SearchBar, SearchResults, PlayList, TrackList and Track, building out the CSS files for each, writing the HTML inside the render methods, importing and exporting the necessary components,
                                     and adding the methods for Track Search, renaming a PlayList, saving a PlayList to Spotify, removing a Track and adding a Track to a PlayList. After this, I passed the state of a search results parameter through a series
-                                    of components to render an array of tracks. Next I passed the state of a user’s custom playlist title and tracks from the App component down to components that render them.</p>
-                                <p>In vestibulum massa quis arcu lobortis tempus. Nam pretium arcu in odio vulputate luctus. Suspendisse euismod lorem eget lacinia fringilla. Sed sed felis justo. Nunc sodales elit in laoreet aliquam. Nam gravida, nisl sit
-                                    amet iaculis porttitor, risus nisi rutrum metus, non hendrerit ipsum arcu tristique est.</p>
+                                    of components to render an array of tracks. Next I passed the state of a user’s custom playlist title and tracks from the App component down to components that render them. I then added methods for adding and removing
+                                    songs from the playlist, then methods for updating the playlist's title and adding and removing a song from the search results to the user's custom playlist. After this, I set up the SearchResults section that allowd
+                                    the search query to be sent to the Spotify API and display the return data. The Spotify.js component contains the API link that allows this to happen. I created this by registering with Spotify and recieving an API
+                                    access token and using it to link the GET and POST requests I have in other files to the Spotify API. Once this was done I was ready to create the savePlaylist method that sent the playlist and track information back
+                                    to Spotify to save.</p>
+                                <p>I hop on this project every once in a while to add small features here and there when I think of new ones. I hope you get the chance to look around and let me know if you can think of anything I should add.</p>
                             </section>
                         </div>
 
@@ -96,7 +99,7 @@
                                         <li>Web Responsive CSS</li>
                                         <li>Javascript</li>
                                         <li>React</li>
-                                        <li>Connect APIS(fix)</li>
+                                        <li>RESTful API</li>
                                     </ul>
                                 </p>
                                 <footer>
@@ -120,7 +123,7 @@
                             <header>
                                 <h3>Ravenous</h3>
                             </header>
-                            <p>React App utilizing Yelp's API that allows users to search restaurants by location and genre ranking results by best match, highest rated, and most reviewed.</p>
+                            <p>Restaurant Search React.js App using API data requests</p>
                             <footer>
                                 <ul class="buttons">
                                     <li><a href="project1.html" class="button small">Learn More</a></li>
@@ -133,9 +136,9 @@
 
                         <section>
                             <header>
-                                <h3>Contact Form</h3>
+                                <h3>Fake Contact Form</h3>
                             </header>
-                            <p>Sed tristique purus vitae volutpat ultrices. Aliquam eu elit eget arcu commodo suscipit dolor nec nibh. Proin a ullamcorper elit, et sagittis turpis. Integer ut fermentum.</p>
+                            <p>A PHP/MySQL App for submitting and retrieving contacts</p>
                             <footer>
                                 <ul class="buttons">
                                     <li><a href="project3.html" class="button small">Learn More</a></li>

@@ -28,7 +28,7 @@
                         <ul>
                             <li><a href="project1.html">Ravenous</a></li>
                             <li><a href="project2.html">Jamming</a></li>
-                            <li><a href="project3.html">Contact Form</a></li>
+                            <li><a href="project3.html">Fake Contact Form</a></li>
                             <li><a href="project4.html">Zews</a></li>
                         </ul>
                     </li>
@@ -43,8 +43,8 @@
 
             <header class="special container">
                 <span class="icon solid fa-laptop"></span>
-                <h2>Contact <strong>Form</strong></h2>
-                <p>Restaurant Search React.js App using API data requests</p>
+                <h2>Fake Contact <strong>Form</strong></h2>
+                <p>A PHP/MySQL App for submitting and retrieving contacts</p>
             </header>
 
             <!-- One -->
@@ -59,17 +59,17 @@
                                 <header>
                                     <h3>See it in Action</h3>
                                 </header>
-                                <p>The app can be found in Github Pages under my profile kingadventure using the button below. Please explore and let me know if I can make any improvements.
+                                <p>I deployed the App with 000webhost.com. They are a free hosting site that supports non static Apps like those using PHP and a database. Check it out!
                                 </p>
                                 <footer>
                                     <ul class="buttons">
-                                        <li><a href="https://kingadventure.github.io/ravenous2/" class="button small" target="_blank">View App</a></li>
+                                        <li><a href="https://stipular-tests.000webhostapp.com/index.php" class="button small" target="_blank">View App</a></li>
                                     </ul>
                                 </footer>
                             </section>
 
                             <section>
-                                <a href="https://kingadventure.github.io/ravenous2/" class="image featured" target="_blank"><img src="images/ravenousfoodpic.jpg" alt="ravenousfoodpic" /></a>
+                                <a href="https://stipular-tests.000webhostapp.com/index.php" class="image featured" target="_blank"><img src="images/fake-contact-form-clip.png" alt="fake-contact-form-clip" /></a>
                                 <header>
                                     <h3>Languages/Skills Used</h3>
                                 </header>
@@ -77,9 +77,9 @@
                                     <ul>
                                         <li>HTML</li>
                                         <li>Web Responsive CSS</li>
-                                        <li>Javascript</li>
-                                        <li>React</li>
-                                        <li>Connect APIS(fix)</li>
+                                        <li>PHP</li>
+                                        <li>MySQL</li>
+                                        <li>Inserting and querying data from tables in a database</li>
                                     </ul>
                                 </p>
                                 <footer>
@@ -96,14 +96,17 @@
                         <!-- Content -->
                         <div class="content">
                             <section>
-                                <a href="https://kingadventure.github.io/ravenous2/" class="image featured"><img src="images/ravenoussearchpic.jpg" alt="ravenoushomescreen" /></a>
-                                <p>Ravenous is a React App utilizing Yelp's API that allows users to search restaurants by location and genre ranking results by best match, highest rated, and most reviewed. I ultimately broke the project down into four parts
-                                    of production, first, creating the static components, second, passing information to those components, third, setting the state of the Ravenous components and lastly, interacting with the Yelp API.</p>
-                                <p>I broke the components down into App, SearchBar, SearchResults, PlayList, TrackList and Track, building out the CSS files for each, writing the HTML inside the render methods, importing and exporting the necessary components,
-                                    and adding the methods for Track Search, renaming a PlayList, saving a PlayList to Spotify, removing a Track and adding a Track to a PlayList. After this, I passed the state of a search results parameter through a series
-                                    of components to render an array of tracks. Next I passed the state of a user’s custom playlist title and tracks from the App component down to components that render them.</p>
-                                <p>In vestibulum massa quis arcu lobortis tempus. Nam pretium arcu in odio vulputate luctus. Suspendisse euismod lorem eget lacinia fringilla. Sed sed felis justo. Nunc sodales elit in laoreet aliquam. Nam gravida, nisl sit
-                                    amet iaculis porttitor, risus nisi rutrum metus, non hendrerit ipsum arcu tristique est.</p>
+                                <a href="https://stipular-tests.000webhostapp.com/index.php" class="image featured"><img src="images/fake-contact-form.png" alt="fakecontactformhomescreen" /></a>
+                                <p>This Fake Contact Form is meant to show the simple functionality of inserting and storing data in a database then querying by selected filter for retrieval. I broke this project down into 4 parts, building the basic form
+                                    using HTML and Web Responsive CSS, Creating the MySQL database and table that the site would use, linking the database and writing the PHP and MySQL insertion code for the submission form on the right, then writing
+                                    the PHP and query code by the filters to return the results. </p>
+                                <p>After building the basic HTML page, I used PhpMyAdmin to build out the database and within the database the table that would hold all the contact data. Once the permissions was set up, I added a PHP file to my public_html
+                                    folder that would serve as the link to the database for any other PHP file that needed it. Next was coding the PHP for the right-sided submission form. It was constructed accordingly, including the link to the database,
+                                    running all the form fields through a mysqli_real_escape_string() function to insure security, if statements for all of the fields to insure the form was fully filled out, creating the constant for the SQL insertion
+                                    with the filled-in values, then the query function fulfilling the insertion. That was it for the right form. For the left form I chose to imbed the PHP in the index page rather than creating a seperate file. The PHP
+                                    included the link to the database, the mysqli_real_escape_string() function again, then if statements to check what filter was used. Within each if statement was the necessary SQL code to search the sumbit term in the
+                                    filter's column, the if statement that returned true gave the SQL code to pull the data. After this I wrote code to format the results for easy readability and that was it! </p>
+                                <p>I don't have any form of real security for this app, hence the "fake" contact database versus a real one. However, because of this there have been a lot of funny submissions. I hope you get the chance look around and enjoy!</p>
                             </section>
                         </div>
 
@@ -120,7 +123,7 @@
                             <header>
                                 <h3>Ravenous</h3>
                             </header>
-                            <p>React App utilizing Yelp's API that allows users to search restaurants by location and genre ranking results by best match, highest rated, and most reviewed.</p>
+                            <p>Restaurant Search React.js App using API data requests</p>
                             <footer>
                                 <ul class="buttons">
                                     <li>
@@ -137,9 +140,7 @@
                             <header>
                                 <h3>Jamming</h3>
                             </header>
-                            <p>React App that allows users to search the Spotify library, create a custom playlist, then save it to their Spotify account.
-                                <br />
-                                <br />
+                            <p>Playlist Creator React.js App using Spotify's API.
                             </p>
                             <footer>
                                 <ul class="buttons">
